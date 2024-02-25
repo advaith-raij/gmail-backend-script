@@ -1,0 +1,29 @@
+[
+    {
+      "conditions": [
+        {
+          "field": "From",
+          "predicate": "Contains",
+          "value": "noreply@olacabs.com"
+        },
+        {
+          "field": "Subject",
+          "predicate": "Contains",
+          "value": "the best time to go electric"
+        }
+      ],
+      "predicate": "Any",
+      "actions": ["Mark as read"]
+    },
+    {
+      "conditions": [
+        {
+          "field": "Subject",
+          "predicate": "Contains",
+          "value": "Competition Launch: Google – AI Assistants"
+        }
+      ],
+      "predicate": "All",
+      "actions": ["Move Message: SPAM"]
+    }
+  ]
